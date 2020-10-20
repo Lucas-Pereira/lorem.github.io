@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.menu{
+    width:100%;
+    background-color: rgba(255,255,255,0.3);
+    padding:15px 10px  ;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#000;
+    font-size:1.075em;
+    padding: 10px;
+    font-family: sans-serif;
+    transition: all 250ms ease;
+    position: relative;
+    
+}
+
+
+.sub-menu{
+    position: relative;
+    height:100vh ;
+    background-image: url("../img/enterprise-unsplash.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.sub-menu-title{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:70%;
+}
+
+.sub-menu-title h1{
+    font-size: 2.5em;
+}
+
+.sub-menu-title h1,.sub-menu-title p{
+    margin-bottom: 7px;
+} 
+
+.sub-menu-title button{
+    padding:15px 17px;
+    text-align: center;
+    margin-top: 20px;
+    color:#fff;
+    background-color: orangered;
+    cursor:pointer;
+    border:none;
+}
+.sub-menu-title button:active{
+    box-shadow: 2px 1px 10px black;
+}
+
+@media only screen and (max-width: 600px){
+    .sub-menu-title{
+        width:100%;
+    }
+
+    .sub-menu-title h1{
+        font-size:1.75em;
+    }
+    .menu-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-card .card{
+        width:100%;
+        padding: 10px 0;
+    }
+}
+
+
+.menu-card{
+    padding:2em 15px;
+    display: flex;
+    background-color: orangered;
+    justify-content: space-around;
+}
+
+.menu-card .card{
+    text-align: center;
+    max-width: 250px;
+    margin:0 7px;
+}
+
+.menu-card i{
+    padding: 15px;
+    background-color: #333;
+    color:#fff;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.menu-card h3, .menu-card p{
+    margin-bottom: 7px;
+}
+
+.link_btn{
+    padding:10px 12px;
+    background: #333;
+    color: #fff;
+    cursor:pointer;
+}
+
+.link_btn:hover{
+    box-shadow: 2px 2px black;
+}
